@@ -1,0 +1,36 @@
+{
+	"name": "DS_Files",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LKS_DataLake",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Arquivo": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "DataLake"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().Arquivo",
+					"type": "Expression"
+				},
+				"folderPath": "stagin/ingest",
+				"fileSystem": "datas"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

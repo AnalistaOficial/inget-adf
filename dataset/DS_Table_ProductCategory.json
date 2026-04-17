@@ -1,0 +1,45 @@
+{
+	"name": "DS_Table_ProductCategory",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LKS_BancoSQL",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "BancoSQL"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ProductCategoryID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ParentProductCategoryID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "rowguid",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ModifiedDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "SalesLT",
+			"table": "ProductCategory"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

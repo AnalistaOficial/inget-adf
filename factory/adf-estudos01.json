@@ -1,0 +1,9 @@
+{
+	"name": "adf-estudos01",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ba7b0336-0b3f-4365-850c-2ff921ff6f37",
+		"tenantId": "3b30e0a2-e263-41f9-87c8-cbd742177170"
+	}
+}
