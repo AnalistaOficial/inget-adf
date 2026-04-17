@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-estudos01"
+		},
+		"LKS_BancoSQL_password": {
+			"value": ""
+		},
+		"LKS_DataLake_accountKey": {
+			"value": ""
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/jbrownlee/Datasets/master/shampoo.csv"
+		},
+		"HttpServer2_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"LKS_BancoSQL_properties_typeProperties_server": {
+			"value": "estudo-sqlserver.database.windows.net"
+		},
+		"LKS_BancoSQL_properties_typeProperties_database": {
+			"value": "estudo-sqldb"
+		},
+		"LKS_BancoSQL_properties_typeProperties_userName": {
+			"value": "estudo"
+		},
+		"LKS_DataLake_properties_typeProperties_url": {
+			"value": "https://estudodatalake01.dfs.core.windows.net/"
+		}
+	}
+}
